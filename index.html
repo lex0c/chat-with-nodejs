@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <meta charset="UTF-8">
+        <title>Crazy Chat with SocketIO // NoteJS</title>
+        <link rel="stylesheet" href="assets/css/style.css">
+    </head>
+    <body>
+        <div class="nickname_container" id="nick">
+            <span>Diga seu nome:</span>
+            <form id="submit">
+                <input type="text" id="nickname"/>
+            </form>
+        </div>
+ 
+        <div id="chat" hidden>
+            <div class="menu">
+                <div class="name" id="name">Léo</div>
+                <div class="last" id="time">15:57</div>
+            </div>
+ 
+            <ol class="chat">
+                <!-- Messages loop here -->
+            </ol>
+ 
+            <input class="textarea" type="text" placeholder="Type here!" id="textarea" />
+        </div>
+</body>
+    <script src="node_modules/jquery/dist/jquery.min.js"></script>
+    <script src="node_modules/socket.io-client/dist/socket.io.js"></script>
+    <script src="assets/js/core.js"></script>
+</html>
